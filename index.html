@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>7DtD XP Calculator</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="app">
+      <h1>7 Days to Die - Exp Calculator</h1>
+      <div class="calc__container">
+        <div class="calc__info">
+          <p id="howToLevel">
+            You need X exp to go from level A to level B which can be obtained
+            by killing around Y Zombies or upgrading Z Wood Blocks one time.
+          </p>
+          <table class="calc__table">
+            <tr>
+              <th>Exp Required</th>
+              <th>Zombies</th>
+              <th>Wood Blocks</th>
+              <th>Concrete Blocks</th>
+            </tr>
+            <tr>
+              <td id="expReq">0</td>
+              <td id="zombieReq">0</td>
+              <td id="woodReq">0</td>
+              <td id="concreteReq">TBA</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="calc__slider">
+          <div id="slider"></div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

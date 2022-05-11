@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  background-color: #f8f8f8;
+}
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+
+.calc__container {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+.calc__info {
+  flex: 50%;
+}
+
+.calc__info p {
+  text-align: center;
+  margin: 1rem auto;
+  max-width: 90%;
+}
+
+.calc__table {
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.calc__table td,
+.calc__table th {
+  border: none;
+  padding: 8px;
+}
+
+.calc__table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.calc__table tr:hover {
+  /* background-color: #ddd; */
+}
+
+.calc__table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: firebrick;
+  color: white;
+}
+
+.calc__slider {
+  flex: 30%;
+  padding: 1rem;
+  background-color: #535353;
+}
+
+#slider {
+  height: 90%;
+  min-height: 400px;
+}
+
+.noUi-value {
+  /* font-size: 0.95rem; */
+  /* margin-top: 0.5em; */
+}
+
+.noUi-vertical .noUi-handle {
+  height: 18px;
+  bottom: -8px;
+}
